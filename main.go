@@ -16,8 +16,8 @@ import (
 )
 
 func main() {
-	var portFlag = flag.Int("port", 8080, "port for serving HTTP requests")
-	var domainsFlag = flag.String("hosts", "toolforge.org,wmcloud.org", "comma-separated list of internet domains whose TLS certificate expiration dates we monitor")
+	var portFlag = flag.Int("port", 0, "port for serving HTTP requests")
+	var domainsFlag = flag.String("hosts", "codesearch.wmcloud.org,query.wikidata.org,toolforge.org,wmcloud.org", "comma-separated list of internet domains whose TLS certificate expiration dates we monitor")
 	flag.Parse()
 
 	port := *portFlag

@@ -126,8 +126,10 @@ th {
 </style>
 </head>
 <body><h1>CertMon: Monitoring TLS Certificates</h1>
-<p>Every 30 seconds, this job checks the expiration dates of TLS certificates,
-and <a href="/metrics">exposes</a> them as metrics for <a href="https://prometheus.io/">Prometheus</a>.</p>
+<p>Every 30 seconds, this job checks the expiration dates of TLS certificates.
+It exposes these dates as <a href="/metrics">metrics</a> for monitoring with <a href="https://prometheus.io/">Prometheus</a>.</p>
+
+<p>Source code: <a href="https://github.com/brawer/certmon">https://github.com/brawer/certmon</a></p>
 
 <p><table>
 <tr><th>Domain</th><th>Certificate expires</th></tr>
